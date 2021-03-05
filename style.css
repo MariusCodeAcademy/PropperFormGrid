@@ -84,3 +84,30 @@ body {
   color: rgb(200, 200, 200);
   margin-bottom: 1.5rem;
 }
+
+/* ties 670 px ir daugiau name ir lastname butu vienoj eilutej */
+@media screen and (min-width: 670px) {
+  .main-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-group {
+    flex-basis: 100%;
+  }
+
+  .form-group--inline {
+    /* kad tarpelis butu 1rem input dydis turetu buti 50% - 0.5rem */
+    flex-basis: calc(50% - 0.7rem);
+  }
+
+  /* display inline block budas */
+  /* .form-group--inline {
+    display: inline-block;
+    width: 49.5%;
+  } */
+}
+
+/* ties 1024 ir daugiau desktop versija  */
