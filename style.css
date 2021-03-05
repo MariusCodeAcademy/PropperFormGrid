@@ -1,0 +1,17 @@
+/* Global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Form part */
+
+.form-part {
+  background-color: rgb(103, 140, 103);
+}
