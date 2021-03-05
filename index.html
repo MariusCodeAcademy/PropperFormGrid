@@ -6,5 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <section class="form-part">
+        <h2 class="form-part__title">Contact Form</h2>
+
+        <form action="">
+          <div class="form-group">
+            <label for="f-name" class="form-group__label">First name</label>
+            <input class="form-input" type="text" id="f-name" name="f-name" />
+          </div>
+
+          <div class="form-group">
+            <label for="l-name" class="form-group__label">Last name</label>
+            <input class="form-input" type="text" id="l-name" name="l-name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-group__label">Email</label>
+            <input class="form-input" type="text" id="email" name="email" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-group__label">Subject</label>
+            <input class="form-input" type="text" id="subject" name="subject" />
+          </div>
+
+          <div class="form-group">
+            <label for="body" class="form-group__label">Your text</label>
+            <textarea
+              name="body"
+              id="body"
+              cols="30"
+              rows="10"
+              class="form-group__textarea"
+            ></textarea>
+          </div>
+
+          <button type="submit">Send message</button>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>
