@@ -1,6 +1,6 @@
 /* Global styles */
 :root {
-  font-size: 16px;
+  font-size: 13px;
 }
 * {
   box-sizing: border-box;
@@ -87,6 +87,9 @@ body {
 
 /* ties 670 px ir daugiau name ir lastname butu vienoj eilutej */
 @media screen and (min-width: 670px) {
+  :root {
+    font-size: 16px;
+  }
   .main-form {
     display: flex;
     flex-direction: row;
@@ -111,3 +114,19 @@ body {
 }
 
 /* ties 1024 ir daugiau desktop versija  */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .flex {
+    display: flex;
+  }
+  .form-part {
+    flex-basis: 60%;
+  }
+  .contact-info {
+    flex-basis: 40%;
+    padding: 0 7%;
+  }
+}
