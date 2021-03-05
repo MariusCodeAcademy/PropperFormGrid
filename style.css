@@ -57,3 +57,30 @@ body {
   font-size: 1rem;
   cursor: pointer;
 }
+
+/* Contact info part */
+
+.contact-info {
+  background-color: darkslategray;
+  color: white;
+  padding: 1.5rem;
+}
+.contact-info__icon {
+  text-align: center;
+  font-size: 2rem;
+}
+.contact-info__title {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info__address-title {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.contact-info__address-value {
+  color: rgb(200, 200, 200);
+  margin-bottom: 1.5rem;
+}
