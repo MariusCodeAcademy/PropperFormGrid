@@ -91,19 +91,28 @@ body {
     font-size: 16px;
   }
   .main-form {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-between; */
+
+    /* the grid way */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
   }
 
   .form-group {
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
+
+    grid-column: span 2;
   }
 
   .form-group--inline {
     /* kad tarpelis butu 1rem input dydis turetu buti 50% - 0.5rem */
-    flex-basis: calc(50% - 0.7rem);
+    /* flex-basis: calc(50% - 0.7rem); */
+
+    grid-column: span 1;
   }
 
   /* display inline block budas */
@@ -111,6 +120,10 @@ body {
     display: inline-block;
     width: 49.5%;
   } */
+
+  .contact-info {
+    padding: 4% 30%;
+  }
 }
 
 /* ties 1024 ir daugiau desktop versija  */
